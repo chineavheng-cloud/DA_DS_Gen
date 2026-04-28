@@ -8,3 +8,6 @@
 #np.nan represents a missing or undefined value. When NumPy computes the mean, any operation involving np.nan results in np.nan, causing the entire average to become invalid. To handle this properly, we use:
 #4. You have one NumPy array containing patient demographics, and a completely separate array containing their chemotherapy regimens. How would you match them up perfectly based on a shared 'Patient ID' using just standard Python and NumPy?
 #Each dataset contains a shared key (Patient ID). By sorting both arrays using this key, we align corresponding rows so that the same patient appears in the same position in both arrays. After alignment, we can combine the data safely. This ensures that each patient’s demographic data correctly matches their treatment data.
+import pandas as pd
+df=pd.read_csv('earthquake.csv')
+print(df)
