@@ -25,31 +25,31 @@ plt.pie(
     startangle=90
 )
 
-# plt.title('Male vs Female Passengers')
-# plt.show()
+plt.title('Male vs Female Passengers')
+plt.show()
 
-# plt.figure(figsize=(8,5))
-# sns.histplot(data=titanic, x='age', bins=20)
+plt.figure(figsize=(8,5))
+sns.histplot(data=titanic, x='age', bins=20)
 
-# plt.title('Age Distribution of Passengers')
-# plt.xlabel('Age')
-# plt.ylabel('Frequency')
+plt.title('Age Distribution of Passengers')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
 
-# plt.show()
+plt.show()
 
-# plt.figure(figsize=(8,5))
-# sns.kdeplot(data=titanic, x='fare', fill=True)
+plt.figure(figsize=(8,5))
+sns.kdeplot(data=titanic, x='fare', fill=True)
 
-# plt.title('Density of Ticket Fare')
-# plt.xlabel('Fare')
-# plt.ylabel('Density')
+plt.title('Density of Ticket Fare')
+plt.xlabel('Fare')
+plt.ylabel('Density')
 
-# plt.show()
+plt.show()
 
-# plt.figure(figsize=(8,5))
-# sns.histplot(data=titanic, x='age', kde=True, bins=20)
-# plt.title('Age Distribution with KDE Curve')
-# plt.xlabel('Age')
-# plt.ylabel('Frequency')
+plt.figure(figsize=(8,5))
+sns.histplot(data=titanic, x='age', kde=True, bins=20)
+plt.title('Age Distribution with KDE Curve')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
 
-# plt.show()
+plt.show()
