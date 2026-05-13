@@ -33,7 +33,7 @@ sns.histplot(data=titanic, x='age', bins=20)
 
 plt.title('Age Distribution of Passengers')
 plt.xlabel('Age')
-plt.ylabel('Frequency')
+plt.ylabel('Amount')
 
 plt.show()
 
@@ -50,6 +50,6 @@ plt.figure(figsize=(8,5))
 sns.histplot(data=titanic, x='age', kde=True, bins=20)
 plt.title('Age Distribution with KDE Curve')
 plt.xlabel('Age')
-plt.ylabel('Frequency')
+plt.ylabel('Amount')
 
 plt.show()
