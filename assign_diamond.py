@@ -1,3 +1,8 @@
+import seaborn as sns
+import pandas as pd
+import matplotlib.pyplot as plt
+diamonds=pd.read_csv('diamonds.csv')
+# print(diamonds)
 plt.figure(figsize=(10,6))
 sns.scatterplot(
     data=diamonds,
@@ -64,3 +69,13 @@ plt.title("Price distribution by cut")
 plt.xlabel("Cut")
 plt.ylabel("Price (USD)")
 plt.show()
+
+selected = diamonds[['price','carat','depth','table']]
+sns.pairplot(selected)
+plt.show()
+summary_table = diamonds.groupby('cut')['price'].agg(
+    Average_Price='mean',
+    Minimum_Price='min',
+    Maximum_Price='max'
+)
+print(summary_table.round(2))
